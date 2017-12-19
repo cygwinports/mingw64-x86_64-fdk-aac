@@ -1,0 +1,15 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-fdk-aac"
+VERSION=0.1.5
+RELEASE=2
+CATEGORY="Devel"
+SUMMARY="AAC codec library for Win64 toolchain"
+DESCRIPTION="Third-Party Modified Version of the Fraunhofer FDK AAC Codec
+Library for Android."
+#HOMEPAGE="http://sourceforge.net/projects/opencore-amr/"
+#SRC_URI="mirror://sourceforge/opencore-amr/${NAME}-${VERSION}.tar.gz"
+HOMEPAGE="https://cgit.freedesktop.org/~wtay/fdk-aac/log/?h=stripped2"
+SRC_URI="https://people.freedesktop.org/~wtay/fdk-aac-${VERSION}-stripped.tar.gz"
+SRC_DIR="fdk-aac-${VERSION}"
